@@ -65,7 +65,7 @@ namespace App.ArangoDB
 
             TimerFunc(() =>
             {
-                var produto = repository.Get(x => x.Description == "Product 12345").Result;
+                var product = repository.Get(x => x.Description == "Product 12345").Result;
 
                 return true;
             }, "Read product query");
